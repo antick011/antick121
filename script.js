@@ -7,14 +7,10 @@ const submit=() => {
     const msg6="Nat"
     
     const input = document.getElementById("inp")
-    if(input.value===msg1,msg2,msg3,msg4,msg5,msg6){
+    console.log(input.value)
+    if(input.value===msg1||input.value===msg2||input.value===msg3||input.value===msg4||input.value===msg5||input.value===msg6){
         console.log("successful")
         document.getElementById("box1").style.display = "block"
-        console.log("successful")
-        var s = document.getElementById("box2")
-        function playAudio(){
-            s.play()
-        }
     }
     else{
         console.log("unsuccessful")
