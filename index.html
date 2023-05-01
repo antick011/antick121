@@ -1,56 +1,15 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript" src="script.js"></script>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Verdana, sans-serif;
-        }
-        
-        .head {
-            width: 350px;
-            height: 80px;
-        }
-        
-        .png1 {
-            width: 50px;
-            height: 40px;
-            margin-top: 10px;
-        }
-        
-        .h1 {
-            color: red;
-            height: 40px;
-            width: 250px;
-            font-size: 20px;
-            margin-left: 50px;
-            margin-top: -40px;
-            text-align: center;
-        }
-        
-        .png2 {
-            width: 50px;
-            height: 40px;
-            margin-left: 300px;
-            margin-top: -90px;
-        }
-        
-        .mySlides {
-            display: none;
-        }
-        
-        img {
-            vertical-align: middle;
-        }
-        
         .slideshow-container {
             width: 350px;
-            height: 550px;
+            height: 450px;
             position: relative;
             margin: auto;
             align-items: center;
@@ -92,152 +51,68 @@
         }
     </style>
 </head>
-
-<body style="background-color: rgb(15, 1, 28);">
-    <div class="head">
-        <img src="heart.png" class="png1">
-        <h1 class="h1">
-            Happy Birth Miss Romanoff...
-        </h1>
-        <img src="heart.png" class="png2">
-    </div>
-
-
-    <div class="slideshow-container">
-
-        <div class="mySlides fade">
-
-            <img src="1.jpg" style="width:100%">
+<body style="background-color: rgb(46, 28, 63);">
+<div class="cont">
+        <input id="inp" type="text" style="height: 22px; width: 335px; font-size: large;" placeholder="Enter your name...">
+        <br>
+        <button onclick="submit()" id="btn" style="
+        height: 25px; 
+        width: 50px; 
+        background-color: cornflowerblue; 
+        font-size: medium;
+        margin-top: 10px;
+        ">Click</button>
+        <div id="box1" hidden>
+                <h1 style="color: rgba(235, 79, 110, 0.629); font-size: x-large;">Happy Birthday Miss Romanoff</h1>
+                <div class="slideshow-container">
+                <img class="mySlides fade" src="1.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="2.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="3.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="4.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="5.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="6.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="7.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="8.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="9.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="10.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="11.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="12.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="13.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="14.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="15.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="16.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="17.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="18.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="19.jpg" alt="" style="height: 450px; width: 345px;">
+                <img class="mySlides fade" src="20.jpg" alt="" style="height: 450px; width: 345px;">
+                </div>
+                <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                </div>
+               
         </div>
+</div>
 
-        <div class="mySlides fade">
-
-            <img src="2.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="3.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="4.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="5.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="6.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="7.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="8.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="9.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="10.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="11.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="12.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="13.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="14.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="15.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="16.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="17.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="18.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="19.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="20.jpg" style="width:100%">
-        </div>
-
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-
-    </div>
-
-    <div>
-        <audio loop src="song.mp3" type="audio/mpeg" controls autoplay style="margin-top: -200px;" hidden autoplay></audio>
-    </div>
-
-    <script>
+<script>
         let slideIndex = 0;
         showSlides();
 
@@ -257,10 +132,9 @@
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 5000);
+            setTimeout(showSlides, 2000);
         }
-    </script>
+</script>
 
 </body>
-
 </html>
