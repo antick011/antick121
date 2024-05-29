@@ -1,10 +1,10 @@
 const submit=() => {
-    const msg1="Sohini"
-    const msg2="sohini"
-    const msg3="Natasha"
-    const msg4="natasha"
-    const msg5="nat"
-    const msg6="Nat"
+    const msg1="rupkatha"
+    const msg2="RUPKATHA"
+    const msg3="Rupkatha"
+    const msg4="Rupkatha Roy"
+    const msg5="RUPKATHA ROY"
+    const msg6="rupkatha roy"
     
     const input = document.getElementById("inp")
     console.log(input.value)
